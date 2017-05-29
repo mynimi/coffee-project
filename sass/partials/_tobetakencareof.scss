@@ -1,0 +1,35 @@
+.stripe{
+    @include flexbox(row, wrap, space-between, center);
+    width: 100%;
+
+    a{
+        font-size: 0;
+        line-height: 0;
+        width: 25%;
+        @media screen and (max-width: 950px){
+          width: 50%;
+        }
+    }
+}
+
+body.index{
+    @include flexbox(column, nowrap, space-between, center);
+    height: 100vh;
+    box-sizing: border-box;
+    header{
+        width: 600px;
+        max-width: 100%;
+        padding: 10px;
+    }
+    .subtitle{
+        width: 550px;
+        max-width: 100%;
+        padding: 10px;
+    }
+}
+
+.copyright{
+    width: 100%;
+    font-size: .8em;
+    text-align: center;
+}

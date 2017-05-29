@@ -1,0 +1,18 @@
+extends page.pug
+block vars
+    - var header = 'Schwarzblut.png'
+    - var headeralt = 'Schwarzblut'
+    - var bodyclass = 'index'
+    
+block content
+    .stripe
+        a(href="coldbrew.html")
+            img(src="img/square/coldbrew.png" alt="coldbrew")
+        a(href="cappuccino.html")
+            img(src="img/square/cappuccino.png" alt="cappuccino")
+        a(href="mocha.html")
+            img(src="img/square/mocha.png" alt="mocha")
+        a(href="frappe.html")
+            img(src="img/square/frappe.png" alt="frappe")
+    .subtitle
+        img(src="img/koffeinzufuhrfuercofeeholics.png" alt="koffeinzufuhr für cofeeholics")

@@ -1,0 +1,39 @@
+extends page.pug
+block vars
+    - var header = 'square/cappuccino.png'
+    - var headeralt = 'Schwarzblut'
+    - var bodyclass = 'cappuccino page'
+
+block head
+    .head
+        h1 Cappuccino
+        h2 schaumiger Klassiker
+block content
+    .content
+        .container
+            h1 Cappuccino
+            .parted
+                .main
+                    p Der hübsche Kaffee-Klassiker lässt sich mithilfe einer French Press super schnell zu Hause zubereiten.
+                    p Der Cappuccion besteht aus gleichen Teilen von Milch, Milchschaum und Kaffee. Traditionellerweise verwendet man für Cappuccino Espresso, wer keine Kaffeemaschine besitzt, verwendet bei der French Press etwas mehr Kaffee als gewöhnlich (~10g/100ml) um einen etwas stärkeren Kaffee zu bekommen.
+                    p Auf Wunsch mit Kakaopulver bestreuen.
+                .side
+                    h3 Zutaten
+                    p
+                        b 1 Teil 
+                        | Kaffee, 
+                        i heiss
+                    p
+                        b 1 Teil 
+                        | Milch, 
+                        i heiss
+                    p
+                        b 1 Teil 
+                        | Milchschaum
+                    p
+                        Kakaopulver
+            .video
+                <iframe src="https://www.youtube.com/embed/quELVysNh6c?ecver=1" frameborder="0" allowfullscreen></iframe>
+            .video
+                <iframe src="https://www.youtube.com/embed/9OY8osRSDBQ?ecver=1" frameborder="0" allowfullscreen></iframe>
+        include includes/foot.pug

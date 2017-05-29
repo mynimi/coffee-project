@@ -1,0 +1,20 @@
+block vars
+    - var header = 'Schwarzblut.png'
+    - var headeralt = 'Schwarzblut'
+    - var bodyclass = null
+    
+- var page = { title: "Schwarzblut", subtitle: "Koffeinzufuhr für Coffeeholics", author: "Myriam Frisano", description: "Eine kleine Seite die die den besten Aspekts des Morgens ins Zentrum rückt - Kaffee."}
+
+doctype html
+html(lang="de")
+    include includes/head.pug
+
+    body(class=bodyclass)
+        header
+            img(src='img/'+header, alt=headeralt)
+            block head
+        block content
+        
+        include includes/footer.pug
+    // body end
+// html end

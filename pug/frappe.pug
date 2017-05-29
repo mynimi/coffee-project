@@ -1,0 +1,47 @@
+extends page.pug
+block vars
+    - var header = 'square/frappe.png'
+    - var headeralt = 'Schwarzblut'
+    - var bodyclass = 'frappe page'
+
+block head
+    .head
+        h1 Caramel Frappé
+        h2 Dessert mit Kaffee
+block content
+    .content
+        .container
+            h1 Caramel Frappé
+            .parted
+                .main
+                    p Caramel Frappé ist perfekt geeignet für heisse Sommertage. Ich persönlich würde das Caramel immer selbst machen, wer es eilig hat, kann hier aber auch auf eine gekaufte Sauce zurückgreifen.
+                    p Optimalerweise bereitet man dieses Frappé mit Cold Brew Kaffee zu.
+                    p Die Verhältnisse variieren hier je nach Geschmack. Ich verwende ein 1:1 Verhältnis von Kaffee zu Milch.
+                .side
+                    h3 Zutaten
+                    p
+                        b 1 Teil 
+                        | Kaffee
+                    p
+                        b 1 Teil 
+                        | Milch
+                    p
+                        b 2 Teile 
+                        | Eis
+                    p
+                        Caramel
+                    h3 Caramel
+                    p
+                        b 4 Teile 
+                        | Zucker
+                    p
+                        b 1 Teil 
+                        | Butter
+                    p
+                        b 2 Teile 
+                        | Sahne
+            .video
+                <iframe src="https://www.youtube.com/embed/4c9ZdK_t6dU?ecver=1" frameborder="0" allowfullscreen></iframe>
+            .video
+                <iframe src="https://www.youtube.com/embed/ZOllvuNEfPM?ecver=1" frameborder="0" allowfullscreen></iframe>
+        include includes/foot.pug

@@ -1,0 +1,45 @@
+extends page.pug
+block vars
+    - var header = 'square/mocha.png'
+    - var headeralt = 'Schwarzblut'
+    - var bodyclass = 'mocha page'
+
+block head
+    .head
+        h1 Caffé Mocha
+        h2 Schokoladenkaffeetraum
+block content
+    .content
+        .container
+            h1 Caffé Mocha
+            .parted
+                .main
+                    p Dieser Kaffee ist das perfekte Getränk für gemütliche Nachmittage mit Freunden, zum Brunch oder dann wenn man sich nicht zwischen heisser Schokolade oder Kaffee entscheiden kann.
+                    p Wer keine Zeit hat, die Canache vorzubereiten, kann die Milch auch mit Kakaopulver erhitzen, Canache schmeckt meiner Meinung nach etwas besser.
+                    p Selbstgemachte Schlagsahne (ich verwende ungesüsst) verwandelt diesen Mocha in einen schokoladigen Kaffeetraum.
+                .side
+                    h3 Zutaten
+                    p
+                        b 1 Teil 
+                        | Kaffee, 
+                        i heiss
+                    p
+                        b 1 Teil 
+                        | Milch (gemischt mit ca. 1 EL Canache)
+                    p
+                        b 1 Teil 
+                        | Schlagsahne
+                    h3 Canache
+                    p 
+                        b 1 Teil 
+                        | Zartbitterschokolade
+                    p 
+                        b 1 Teil 
+                        | Sahne
+            .video
+                <iframe src="https://www.youtube.com/embed/sfoyuk6eTbA?ecver=1" frameborder="0" allowfullscreen></iframe>
+            .video
+                <iframe src="https://www.youtube.com/embed/quELVysNh6c?ecver=1" frameborder="0" allowfullscreen></iframe>
+            .video
+                <iframe src="https://www.youtube.com/embed/yZe5_SvfIcw?ecver=1" frameborder="0" allowfullscreen></iframe>
+        include includes/foot.pug

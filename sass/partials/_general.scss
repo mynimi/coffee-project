@@ -1,0 +1,143 @@
+body{
+    border: 20px $head-bg solid;
+}
+blockquote{
+    font-size: 1.2em;
+    width: 95%;
+    margin: 20px auto;
+    text-align: center;
+    font-family: 'Vollkorn', 'Times New Roman', serif;
+    font-style: italic;
+
+    cite{
+        font-style: normal;
+        font-size: .8em;
+        opacity: .8;
+        text-align: right;
+        width: 100%;
+        display: block;
+    }
+}
+
+.hidden{
+    display: none;
+}
+
+.btn{
+    @extend a;
+    border: 2px solid currentColor;
+    padding: 3px 5px;
+    border-radius: 3px;
+    position: relative;
+    top: 12px;
+    line-height: 2;
+}
+
+p + {
+    h1,
+    h2,
+    h3,
+    h4{
+        margin-top: 20px;
+    }
+}
+
+.video{
+    @include paddinghack(100%, 16, 9, "iframe");
+    margin: 20px auto;
+}
+
+
+body.page{
+    .foot{
+        width: 80%;
+        @include flexbox(row, wrap, space-around, center);
+        margin: 30px auto;
+        padding: 15px 0;
+        background: $head-bg;
+        a{
+            color: white;
+            text-align: center;
+            padding: 10px;
+            box-sizing: border-box;
+
+            &:hover{
+                color: rgba(white, .7);
+            }
+
+            @media screen and (max-width: 780px){
+                width: 50%;
+            }
+            @media screen and (max-width: 500px){
+                width: 100%;
+            }
+        }
+    }
+    header{
+        width: 80%;
+        margin: 50px auto;
+        background: $head-bg;
+        color: white;
+        @include flexbox(row, wrap, space-around, center);
+
+        @media screen and (max-width: 1300px){
+          margin-top: 0;
+          width: 100%;
+        }
+        img{
+            width: 50%;
+
+            @media screen and (max-width: 900px){
+              width: 100%;
+            }
+        }
+        .head{
+            width: 50%;
+            text-align: center;
+            padding: 30px 0;
+            h1{
+                font-weight: 700;
+            }
+            h2{
+                font-family: $main-font;
+            }
+
+            @media screen and (max-width: 900px){
+              width: 100%;
+            }
+        }
+    }
+    .content{
+        width: 100%;
+        background: white;
+    }
+}
+
+
+$pages: index, coldbrew, cappuccino, mocha, frappe;
+@each $p in $pages {
+    .#{$p} {
+        .#{$p}{
+            display: none;
+        }
+    }
+}
+
+.parted{
+    @include flexbox(row-reverse, wrap, space-between, flex-start);
+    .side{
+        width: 250px;
+
+        @media screen and (max-width: 660px){
+          width: 100%;
+        }
+    }
+    .main{
+        width: calc(100% - 270px);
+        padding-top: 10px;
+
+        @media screen and (max-width: 660px){
+          width: 100%;
+        }
+    }
+}

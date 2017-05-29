@@ -1,0 +1,32 @@
+extends page.pug
+block vars
+    - var header = 'square/coldbrew.png'
+    - var headeralt = 'Schwarzblut'
+    - var bodyclass = 'coldbrew page'
+
+block head 
+    .head
+        h1 Cold Brew 
+        h2 eiskalte Koffeinbombe
+block content
+    .content
+        .container
+            h1 Cold Brew
+            .parted
+                .main
+                    p Dieser Kaffee wird mit kühlem Wasser bei Raumtemperatur gebrüht. Durch die sanfte Extraktion über mehrere Stunden entsteht kaum Säure, wodurch der Kaffee weicher schmeckt. Da er ausserdem hoch konzentriert ist, enthält er mehr Koffeein und hat eine stärkere Wirkung.
+                    p Ich persönlich trinke ihn unverdünnt mit etwas Milch, falls er zu stark ist, entweder die Kaffeemenge reduzieren, oder mit etwas Wasser verdünnen.
+                    p Cold Brew lässt sich im Kühlschrank bis zu zwei Wochen aufbewahren.
+                .side 
+                    h3 Zutaten
+                    p
+                        b 7g 
+                        | Kaffee, 
+                        i grob gemahlen
+                    p
+                        b 100ml 
+                        | Wasser,
+                        i kalt
+            .video
+                <iframe src="https://www.youtube.com/embed/HFlPQFhp2yQ?ecver=1" frameborder="0" allowfullscreen></iframe>
+        include includes/foot.pug
